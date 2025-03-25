@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blood Availability</title>
+  <link rel="stylesheet" href="Blood Availability Page .css">
+  <link rel="stylesheet" href="styleNAV.css">
+</head>
+<body>
+
+   <!-- Navbar -->
+   <nav>
+    <ul>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="Donor Registration.html">Donor Registration</a></li>
+      <li><a href="Recipient Registration Page.html">Recipient Registration</a></li>
+      <li><a href="Blood Availability Page .html">Blood Availability</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+  <div class="container">
+    <header>
+      <h1>Blood Availability</h1>
+      <p>Check Available Blood Types Near You</p>
+    </header>
+
+    <div class="filter-section">
+      <form class="filter-form">
+        <div class="filter-group">
+          <label for="blood-group">Blood Group</label>
+          <select id="blood-group" name="blood-group">
+            <option value="">All Blood Groups</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="location">Location</label>
+          <input type="text" id="location" name="location" placeholder="Enter city or zip code">
+        </div>
+
+        <button type="submit">Search</button>
+      </form>
+    </div>
+
+    <div class="availability-section">
+      <h2>Available Blood Types</h2>
+      <div class="availability-grid">
+        <!-- Example Card -->
+        <div class="card">
+          <h3>A+</h3>
+          <p><strong>Quantity:</strong> 15 Units</p>
+          <p><strong>Location:</strong> New York City</p>
+          <p><strong>Contact:</strong> 123-456-7890</p>
+        </div>
+
+        <div class="card">
+          <h3>O-</h3>
+          <p><strong>Quantity:</strong> 10 Units</p>
+          <p><strong>Location:</strong> Los Angeles</p>
+          <p><strong>Contact:</strong> 987-654-3210</p>
+        </div>
+
+        <div class="card">
+          <h3>B+</h3>
+          <p><strong>Quantity:</strong> 8 Units</p>
+          <p><strong>Location:</strong> Chicago</p>
+          <p><strong>Contact:</strong> 555-123-4567</p>
+        </div>
+
+        <!-- Add more cards as needed -->
+      </div>
+    </div>
+
+    <aside class="info">
+      <h3>How to Maintain Blood Supply</h3>
+      <ul>
+        <li>Encourage regular donations</li>
+        <li>Organize blood drives in your community</li>
+        <li>Promote awareness about the importance of blood donation</li>
+      </ul>
+      <p>Your contribution ensures that blood is always available for those in need.</p>
+    </aside>
+  </div>
+
+</body>
+</html>
